@@ -3,7 +3,7 @@ app.config(function($locationProvider) {
 })
 
 app.config(function($routeProvider) {
-  $routeProvider.when('/events', {
+  $routeProvider.when('/', {
     templateUrl: 'templates/list.html'
-  }).otherwise({ redirectTo: '/events' })
+  }).otherwise({ redirectTo: '/' })
 })
