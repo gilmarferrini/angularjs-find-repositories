@@ -4,6 +4,6 @@ app.config(function($locationProvider) {
 
 app.config(function($routeProvider) {
   $routeProvider.when('/', {
-    templateUrl: 'templates/list.html'
+    templateUrl: 'templates/home.html'
   }).otherwise({ redirectTo: '/' })
 })
