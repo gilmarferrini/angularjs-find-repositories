@@ -1,8 +1,10 @@
 .repository {
-  width: 30%;
+  width: 80%;
 }
 
-.repository__header {}
+.repository__header p, .repository__header img  {
+  height: 40px;
+}
 
 .repository__header img {
   width: 40px;
@@ -12,4 +14,10 @@
 .repository__body {
   padding: 1rem;
   border: 1px solid #C6C6C6;
+}
+
+@media screen and (min-width: 1400px) {
+  .repository {
+    width: 50%;
+  }
 }
