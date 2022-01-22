@@ -31,7 +31,11 @@
       </div>
 
       <div class="repository__body mt-1">
-        <p>{{ repository.full_name }}</p>
+        <p>
+          <a ng-href="/details/1">
+            {{ repository.full_name }}
+          </a>
+        </p>
         <p>{{ repository.description }}</p>
       </div>
 
