@@ -1,0 +1,15 @@
+.repository {
+  width: 30%;
+}
+
+.repository__header {}
+
+.repository__header img {
+  width: 40px;
+  border-radius: 50%;
+}
+
+.repository__body {
+  padding: 1rem;
+  border: 1px solid #C6C6C6;
+}

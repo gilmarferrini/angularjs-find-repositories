@@ -20,4 +20,23 @@
       </div>
     </nav>
   </header>
+
+
+  <div class="d-flex flex-column justify-content-center align-items-center">
+    <div class="repository" ng-repeat="repository in repositories">
+
+      <div class="repository__header mt-2 d-flex align-items-center">
+        <img ng-src="{{repository.owner.avatar_url}}" alt="{{ repository.owner.login }}">
+        <p>{{ repository.owner.login }}</p>
+      </div>
+
+      <div class="repository__body mt-1">
+        <p>{{ repository.full_name }}</p>
+        <p>{{ repository.description }}</p>
+      </div>
+
+      <div class="border-bottom"></div>
+
+    </div>
+  </div>
 </div>
