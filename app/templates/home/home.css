@@ -2,8 +2,9 @@
   width: 80%;
 }
 
-.repository__header p, .repository__header img  {
-  height: 40px;
+.repository__header p {
+  margin: 0;
+  padding: 0;
 }
 
 .repository__header img {
