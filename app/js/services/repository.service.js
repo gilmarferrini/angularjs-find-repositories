@@ -5,6 +5,12 @@ app.factory("repositoryService", function ($http) {
     },
     findRepositoryByNameAndOwnerName: function (repositoryName, ownerName) {
       return $http.get(`https://api.github.com/repos/${ownerName}/${repositoryName}`)
+    },
+    findLanguagesByRepositoryNameAndOwnerName: function (repositoryName, ownerName) {
+      return $http.get(`https://api.github.com/repos/${ownerName}/${repositoryName}/languages`)
+    },
+    findRepositoriesByOwnerName: function (ownerName) {
+      return $http.get(`https://api.github.com/users/${ownerName}/repos`)
     }
   }
 })

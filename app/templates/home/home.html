@@ -1,8 +1,8 @@
-<div>
+<div class="container">
   <header>
     <nav class="navbar navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand">FindRepositories</a>
+        <a class="navbar-brand" ng-href="/">FindRepositories</a>
         <form class="d-flex">
           <input 
             class="form-control me-2" 
@@ -32,7 +32,7 @@
 
       <div class="repository__body mt-1">
         <p>
-          <a ng-href="/details/1">
+          <a ng-href="/details/{{repository.owner.login}}/{{repository.name}}">
             {{ repository.full_name }}
           </a>
         </p>

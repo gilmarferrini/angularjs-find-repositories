@@ -7,7 +7,8 @@ app.config(function($routeProvider) {
     templateUrl: 'templates/home/home.html',
     controller: 'RepositoryController'
   })
-  .when('/details/:name', {
-    templateUrl: 'templates/details/details.html'
+  .when('/details/:ownerName/:repositoryName', {
+    templateUrl: 'templates/details/details.html',
+    controller: 'RepositoryDetailsController'
   }).otherwise({ redirectTo: '/' })
 })
